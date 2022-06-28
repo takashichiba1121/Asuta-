@@ -128,8 +128,8 @@ void InitCost(int heuristic_cost, int total_cost)
 	{
 		for (int x = 0; x < MapWidth; x++)
 		{
-			Map[y][x].HeuristicCost = heuristic_cost;
-			Map[y][x].TotalCost = total_cost;
+			Map[y][x].HeuristicCost = float(heuristic_cost);
+			Map[y][x].TotalCost = float(total_cost);
 		}
 	}
 }
@@ -137,8 +137,8 @@ void InitCost(int heuristic_cost, int total_cost)
 // ヒューリスティックコスト計算(ノードとゴールまでの距離を返している)
 float CalculateHeuristic(const Node* node, const Node* Goal)
 {
-	float x = fabsf(Goal->Position.X - node->Position.X);
-	float y = fabsf(Goal->Position.Y - node->Position.Y);
+	float x = fabsf(float(Goal->Position.X - node->Position.X));
+	float y = fabsf(float(Goal->Position.Y - node->Position.Y));
 
 	return sqrtf(x * x + y * y);
 }
@@ -260,11 +260,11 @@ void AStar(Cell start, int startz, Cell goal, int goalz, std::list<Cell>* route_
 				startz == 2 && goalz == 1 ||
 				startz == 1 && goalz == 2)
 			{
-				edge_cost = CostTable2[adjacent_node->Position.Y][adjacent_node->Position.X];
+				edge_cost = float(CostTable2[adjacent_node->Position.Y][adjacent_node->Position.X]);
 			}
 			else
 			{
-				edge_cost = CostTable1[adjacent_node->Position.Y][adjacent_node->Position.X];
+				edge_cost = float(CostTable1[adjacent_node->Position.Y][adjacent_node->Position.X]);
 			}
 			// 取得ノードのトータルコスト
 			float node_cost = search_node->TotalCost;

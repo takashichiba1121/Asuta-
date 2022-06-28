@@ -1,8 +1,4 @@
 ﻿  class.cpp
-C:\K021G1120\二年次\TR1\Asuta-\Asuta-\class.cpp(131,30): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\K021G1120\二年次\TR1\Asuta-\Asuta-\class.cpp(132,26): warning C4244: '=': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\K021G1120\二年次\TR1\Asuta-\Asuta-\class.cpp(140,35): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\K021G1120\二年次\TR1\Asuta-\Asuta-\class.cpp(141,35): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\K021G1120\二年次\TR1\Asuta-\Asuta-\class.cpp(263,80): warning C4244: '=': 'const int' から 'float' への変換です。データが失われる可能性があります。
-C:\K021G1120\二年次\TR1\Asuta-\Asuta-\class.cpp(267,80): warning C4244: '=': 'const int' から 'float' への変換です。データが失われる可能性があります。
+  main.cpp
+  コードを生成中...
   Asuta-.vcxproj -> C:\K021G1120\二年次\TR1\Asuta-\Debug\Asuta-.exe

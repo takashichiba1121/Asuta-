@@ -132,7 +132,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		{
 			Cell kiroku = route_list->front();
 			route_list->pop_front();
-			if (kiroku.X==-1,kiroku.Y==-1) {
+			if (kiroku.Y==-1) {
 				DrawFormatString(10, 0, GetColor(255, 255, 255), "Œo˜H‚ÍŒ©‚Â‚©‚ç‚È‚©‚Á‚½");
 			}
 			DrawFormatString(610, i * 15, GetColor(255, 255, 255), "%d,%d", kiroku.Y, kiroku.X);
