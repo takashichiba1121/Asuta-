@@ -368,6 +368,7 @@ void AStar(Cell start, Cell goal,  std::list<Cell>* route_list,bool map)
 	}
 	else
 	{
+		route_list->pop_front();
 		while (routelist.empty() == false)
 		{
 			route_list->push_front(routelist.front());

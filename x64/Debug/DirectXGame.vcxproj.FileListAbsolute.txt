@@ -1,3 +1,4 @@
 C:\KamataEngine202204011\KamataEngine\DirectXGame\x64\Debug\DirectXGame.exe
 C:\K021G1120\二年次\AL3\3D\DirectXGame\x64\Debug\DirectXGame.exe
 C:\K021G1120\二年次\TR1\DirectXGame\x64\Debug\DirectXGame.exe
+C:\k021g1120\二年次\TR1\Asuta\x64\Debug\DirectXGame.exe

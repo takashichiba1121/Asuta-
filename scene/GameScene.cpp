@@ -84,8 +84,7 @@ void GameScene::Update() {
 		Asuta = true;
 	}
 	else if (Asuta == true){
-		time_t end = clock();
-		if ( end-time >= 1000){
+		if (clock() -time >= 1000){
 			Cell player = route_list->front();
 			route_list->pop_front();
 			if (route_list->empty() == true) { Asuta = false; }
